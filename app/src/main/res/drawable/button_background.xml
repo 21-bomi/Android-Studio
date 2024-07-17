@@ -1,0 +1,15 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="#FFFFFF"/> <!-- 파란색 배경 -->
+    <stroke
+        android:width="2dp"
+        android:color="#ffffff"
+        />
+
+    <size
+        android:width="200dp"
+        android:height="200dp"
+        />
+</shape>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/secondLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 상단 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#5FB0BA">
+
+        <ImageButton
+            android:id="@+id/btn_menu_look"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu"
+            android:contentDescription="룩페이지 메뉴 버튼"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:text="찾아요"
+            android:textSize="35dp"
+            android:textColor="#202735" />
+
+        <Button
+            android:id="@+id/btnGoToLookPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="15dp"
+            android:text="글쓰기"
+            android:onClick="goToLookPage"
+            android:textColor="@color/white" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="#202735" />
+
+    </RelativeLayout>
+
+    <!-- 검색어 입력란 -->
+
+    <!-- ListView -->
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/editTextLook"
+            android:layout_width="0dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:hint="검색어를 입력하세요" />
+
+        <ImageButton
+            android:id="@+id/btnSearchLook"
+            android:layout_width="51dp"
+            android:layout_height="56dp"
+            android:background="@drawable/button_background"
+            android:onClick="onSearchClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/magnifier_color" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewLook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"/>
+
+</LinearLayout>

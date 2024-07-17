@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.PlzFind"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="30dp">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/profileimg"
+        android:layout_marginLeft="30dp"
+        />
+
+        <TextView
+            android:id="@+id/profileUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="홍길동"
+            android:textSize="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="45dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디"/>
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="bufind"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임"/>
+
+    <EditText
+        android:id="@+id/edtNickName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="찾아조"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="plzfind@bu.ac.kr"
+        android:layout_marginBottom="15dp"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/btnEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        android:textColor="@color/white"
+        android:background="@drawable/button_blue"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/btnEdtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue"
+
+            />
+        <Button
+            android:id="@+id/btnEdtCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
